@@ -17,10 +17,10 @@ inputSig = 0.004 	#initialization for chan 2 oscope scaling
 magnitude = [0] 	#list for storing magnitude readings in dB
 frequency = [0] 	#list for storing frequency
 
-freqStep = 10000 		#set increment of frequency sweep
-maxFreq = 500000 		#end frequency
-PDF_title = 'LM318FreqResponse2'
-XL_title = 'dataOutput2'
+freqStep = 100 			#set increment of frequency sweep
+maxFreq = 1000000 		#end frequency
+PDF_title = 'LM318FreqResponse'
+XL_title = 'dataOutput'
 
 
 #--------------------------CREATE EXCEL SPREADSHEET----------------------------------
@@ -55,7 +55,7 @@ psu.toggleOutput(2,'ON')
 time.sleep(1)
 
 #Initialize Function Generator
-wf.sine(1,0.004,0)
+wf.sine(1,0.004,1)
 wf.toggleOutput(1,'ON')
 time.sleep(1)
 
