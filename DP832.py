@@ -1,4 +1,4 @@
-#add if no reading... return float of 0
+#!/usr/bin/env python
 import visa
 import time
 delay = 0.01 #delay in seconds (50 ms)
